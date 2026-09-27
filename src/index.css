@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #07111f;
+    --sidebar-bg: #0b1a2c;
+    --card-bg: #0e2135;
+    --card-border: #1d4868;
+    --brand-cyan: #72e8ff;
+    --text-eyebrow: #6f9cb8;
+    --btn-blue: #123756;
+    --btn-border: #29739c;
+    --btn-hover: #18517a;
+    --input-bg: #081827;
+    --input-border: #27506c;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: #e8f1ff;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif;
+  }
+}
+
+/* Custom scrollbar styling matching JARVIS PySide6 theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #28516a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3c7294;
+}
+
+/* Monospace fonts for logs & code */
+.font-mono-tech {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.font-brand {
+  font-family: 'Chakra Petch', sans-serif;
+  letter-spacing: 0.15em;
+}
+
+/* Glass & Glow effects */
+.jarvis-card {
+  background: #0e2135;
+  border: 1px solid #1d4868;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+}
+
+.jarvis-btn {
+  background: #123756;
+  border: 1px solid #29739c;
+  border-radius: 9px;
+  padding: 8px 14px;
+  font-weight: 600;
+  transition: all 0.15s ease-in-out;
+  color: #e8f1ff;
+}
+
+.jarvis-btn:hover {
+  background: #18517a;
+  border-color: #66d4f0;
+  box-shadow: 0 0 12px rgba(102, 212, 240, 0.25);
+}
+
+.jarvis-btn:active {
+  background: #0b2a43;
+}
+
+.jarvis-input {
+  background: #081827;
+  border: 1px solid #27506c;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #e8f1ff;
+  transition: border-color 0.15s ease;
+}
+
+.jarvis-input:focus {
+  outline: none;
+  border-color: #6be5ff;
+  box-shadow: 0 0 0 1px rgba(107, 229, 255, 0.2);
+}

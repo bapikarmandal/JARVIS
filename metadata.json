@@ -1,0 +1,7 @@
+{
+  "name": "JARVIS Desktop OS",
+  "description": "A modular, safety-first desktop AI assistant featuring command center chat, voice interface with speech synthesis and transcription, searchable long-term memory vault, local automation reminders, permissioned system tools, and plugin manager.",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

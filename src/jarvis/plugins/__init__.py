@@ -1,1 +1,0 @@
-"""Extensible capability plugin system."""

@@ -1,1 +1,0 @@
-"""Permissioned operating-system integrations."""
